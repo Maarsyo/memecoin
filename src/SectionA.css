@@ -1,0 +1,124 @@
+.console {
+  background: #000; /* Fundo preto sólido */
+  color: #f1f1f1; /* Texto branco */
+  font-family: "Consolas", "Courier New", monospace; /* Fonte monoespaçada */
+  border: 2px solid #333; /* Borda cinza escura */
+  border-radius: 0; /* Sem bordas arredondadas */
+  width: 600px; /* Largura fixa */
+  height: 400px; /* Altura fixa */
+  margin: auto;
+  white-space: pre-wrap; /* Mantém as quebras de linha */
+  font-size: 16px; /* Tamanho da fonte típico do CMD */
+  line-height: 1.5; /* Espaçamento entre linhas */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Sombra para simular profundidade */
+  overflow-y: auto; /* Scroll interno para textos longos */
+  position: relative; /* Posicionamento relativo */
+}
+
+/* Janela do CMD (título superior) */
+.console-header {
+  position: sticky; /* Mantém o cabeçalho fixado no topo do console */
+  top: 0; /* Fixado no topo do console */
+  z-index: 10; /* Garante que o cabeçalho fique sobre o conteúdo */
+  background: #333; /* Fundo cinza escuro */
+  color: #f1f1f1; /* Texto branco */
+  font-family: "Segoe UI", Arial, sans-serif; /* Fonte padrão do Windows */
+  font-size: 14px;
+  padding: 4px 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #555; /* Separador */
+}
+
+/* Título no lado esquerdo */
+.console-header-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.console-header-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Botões no lado direito */
+.console-header-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.console-header-button {
+  width: 15px;
+  height: 15px;
+  background-color: #444; /* Fundo padrão dos botões */
+  border: none;
+  border-radius: 50%; /* Forma circular */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+
+.console-header-button.close {
+  background-color: #e81123; /* Vermelho para o botão de fechar */
+}
+
+.console-header-button.close:hover {
+  background-color: #f44141; /* Vermelho mais claro ao passar o mouse */
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px; /* Largura do cursor */
+  height: 16px; /* Altura do cursor */
+  background-color: #f1f1f1; /* Cor do cursor */
+  animation: blink 1s steps(1) infinite;
+  vertical-align: text-bottom; /* Alinha o cursor ao texto */
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0; /* Faz o cursor piscar */
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative; /* Para posicionar o console */
+  overflow: hidden; /* Oculta partes que excedam o limite */
+}
+
+.container .start {
+  display: flex;
+  background-color: #fff;
+  font-size: 16px;
+  height: 50px;
+  width: 130px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  transition: transform 0.1s ease, background-color 0.2s ease; /* Suaviza a transição */
+}
+
+.container .start:hover {
+  transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
+}
+
+button:active {
+  transform: scale(0.90); /* Reduz levemente o tamanho ao pressionar */
+}
+.console-main {
+  padding: 10px;
+}
+
+button p {
+  font-weight: bolder;
+}

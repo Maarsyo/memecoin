@@ -1,0 +1,14 @@
+.desktop {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px;
+    height: 100vh;
+    overflow-y: auto;
+
+  }
+  
+.desktop-container{
+    position: absolute;
+    bottom: 100px;
+}

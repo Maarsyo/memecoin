@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    height: 100vh; /* Altura total da tela */
+    background: url("/background.png"); /* Imagem de fundo */
+    background-size: 100% 100%; /* Faz a imagem de fundo cobrir toda a tela */
+}
+
+/* Janelas */
+.window {
+    position: absolute;
+    background: #222;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 600px;
+    height: 400px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .window.hidden {
+    visibility: hidden; /* Torna a janela invisível */
+    opacity: 0; /* Remove sua opacidade para transições suaves */
+    transition: opacity 0.3s ease;
+  }
+  
+  .window-header {
+    background: #444;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  
+  .console-header-button {
+    background: #888;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 8px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,78 @@
+.window {
+    position: absolute;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: 10;
+    background-color: #ffffff !important;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+  
+
+  .window.minimizing {
+    opacity: 0;
+    transform: scale(0.8); /* Janela diminui ao minimizar */
+  }
+  
+  .window.hidden {
+    display: none; /* Esconde após a animação */
+  }
+  
+  .window.restoring {
+    opacity: 1;
+    transform: scale(1); /* Janela cresce ao restaurar */
+  }
+  
+
+  .window.hidden {
+    visibility: hidden; /* Apenas esconde visualmente */
+    opacity: 0; /* Remove opacidade */
+    transition: opacity 0.3s ease;
+  }
+  
+  .window-header {
+    background-color: #ffffff !important;
+
+  }
+  
+  .console-header-button {
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 8px;
+    cursor: pointer;
+  }
+  
+
+  
+.window-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .window-header .left, .right{
+    display: flex;
+    align-items: center;
+  }
+  .window-header .left svg{
+    font-size: 18px;
+    color: #131313;
+  }
+  
+  .window-header .left h1{
+    font-weight: 400;
+    color: #000;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .window-header .right{
+    margin-right: 10px;
+  }

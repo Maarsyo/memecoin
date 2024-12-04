@@ -1,0 +1,28 @@
+.hacker-text {
+    background: black;
+    color: #00ff00;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px;
+    overflow: hidden;
+    height: auto; /* Ocupa toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .hacker-line {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,18 @@
+.icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}

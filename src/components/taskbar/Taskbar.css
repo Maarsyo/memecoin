@@ -1,0 +1,81 @@
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(30, 30, 30, 0.582);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.taskbar-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.system-tray {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.system-tray svg{
+  font-size: 30px;
+  color: white;
+}
+
+  
+  .taskbar-icons,
+  .system-tray {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+  .taskbar-icons svg{
+    font-size: 30px;
+    color: #d8d8d8;
+  }
+
+  .taskbar-icons .item{
+    border-bottom: 2px solid rgb(0, 110, 255);
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .taskbar-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .taskbar-icons .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #d8d8d8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .taskbar-icons .item:hover {
+    color: white;
+  }
+  
+  .system-tray {
+    display: flex;
+    gap: 10px;
+  }
+  
+  

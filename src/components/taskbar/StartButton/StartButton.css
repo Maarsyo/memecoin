@@ -1,0 +1,14 @@
+/* src/components/StartButton.css */
+.start-button {
+    width: 48px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .start-button svg {
+    font-size: 25px;
+    color: white;
+  }
